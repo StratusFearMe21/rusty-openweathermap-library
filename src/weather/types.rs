@@ -7,6 +7,8 @@ use crate::location::LocationClient;
 use crate::weather::WeatherClient;
 use serde::{Deserialize, Serialize};
 #[cfg(target_arch = "wasm32")]
+use wasm_bindgen::prelude::*;
+#[cfg(target_arch = "wasm32")]
 use wasm_bindgen::JsValue;
 
 // region: Coord
