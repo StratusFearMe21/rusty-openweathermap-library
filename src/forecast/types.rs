@@ -66,7 +66,7 @@ pub struct ForecastItem {
     pub visibility: i64,
     /// Probability of precipitation. The values of the parameter vary between 0 and 1, where 0 is equal to 0%, 1 is equal to 100%
     pub pop: f64,
-    pub rain: Rain,
+    pub rain: Option<Rain>,
     pub snow: Snow,
     pub sys: Sys,
     /// Time of data forecasted, ISO, UTC
