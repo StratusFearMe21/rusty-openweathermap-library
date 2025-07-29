@@ -81,7 +81,7 @@ pub struct ForecastResponse {
     /// Internal parameter
     pub cod: i64,
     /// Internal parameter
-    pub message: i64,
+    pub message: String,
     /// A number of timestamps returned in the API response
     pub cnt: usize,
     pub list: Vec<ForecastItem>,
