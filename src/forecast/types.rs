@@ -79,16 +79,16 @@ pub struct ForecastItem {
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ForecastResponse {
     /// Internal parameter
-    pub cod: i64,
+    pub cod: String,
     /// Internal parameter
-    pub message: String,
+    pub message: i64,
     /// A number of timestamps returned in the API response
     pub cnt: usize,
     pub list: Vec<ForecastItem>,
 }
 
 impl ForecastResponse {
-    pub fn new(cod: i64, message: String, list: Vec<ForecastItem>) -> Self {
+    pub fn new(cod: String, message: i64, list: Vec<ForecastItem>) -> Self {
         ForecastResponse {
             cod,
             message,
