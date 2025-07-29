@@ -1,5 +1,5 @@
 pub mod client;
 pub mod types;
 
-pub use client::LocationClient;
+pub use client::ForecastClient;
 pub use types::*;
