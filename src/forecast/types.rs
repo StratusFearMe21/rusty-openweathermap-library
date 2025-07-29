@@ -88,7 +88,7 @@ pub struct ForecastResponse {
 }
 
 impl ForecastResponse {
-    pub fn new(cod: i64, message: i64, list: Vec<ForecastItem>) -> Self {
+    pub fn new(cod: i64, message: String, list: Vec<ForecastItem>) -> Self {
         ForecastResponse {
             cod,
             message,
